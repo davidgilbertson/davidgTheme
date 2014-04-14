@@ -95,7 +95,7 @@
         <span class="menu-icon-bar"></span>
         <span class="menu-icon-bar"></span>
       </button>
-      <ul class="dg-navbar-nav nav navbar-nav navbar-right hidden-xs hidden-sm">
+      <ul class="dg-navbar-nav hidden-xs hidden-sm">
         <li><a id="nav-home" class="navbar-link home" href="/" title="">HOME</a></li>
         <li><a id="nav-portfolio" class="navbar-link portfolio" href="portfolio" title="">PORTFOLIO</a></li>
         <li><a id="nav-blog" class="navbar-link blog" href="blog" title="">BLOG</a></li>
