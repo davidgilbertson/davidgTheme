@@ -87,28 +87,30 @@
 
 
 
-  <nav id="menu-contents" class="menu-contents">
-    <div class="row menu-row">
-      <div class="col col-xs-12 col-sm-4"><a id="nav-home" class="nav-link" href="/" title="">HOME</a></div>
-      <div class="col col-xs-12 col-sm-4"><a id="nav-portfolio" class="nav-link" href="portfolio" title="">PORTFOLIO</a></div>
-      <div class="col col-xs-12 col-sm-4"><a id="nav-blog" class="nav-link" href="blog" title="">BLOG</a></div>
-    </div>
+  <nav class="dg-nav dg-hidden-nav">
+    <!-- <div class="row dg-hidden-nav-row"> -->
+      <div class="dg-hidden-nav-item dg-nav-item home"><a id="nav-home"      class="dg-nav-link dg-hidden-nav-link" href="/">HOME</a></div>
+      <div class="dg-hidden-nav-item dg-nav-item portfolio"><a id="nav-portfolio" class="dg-nav-link dg-hidden-nav-link" href="portfolio">PORTFOLIO</a></div>
+      <div class="dg-hidden-nav-item dg-nav-item blog"><a id="nav-blog"      class="dg-nav-link dg-hidden-nav-link" href="blog">BLOG</a></div>
+    <!-- </div> -->
   </nav>
 
   <div id="body-wrapper" class="body-wrapper" role="navigation">
-    <header class="dg-navbar container-fluid">
-      <a href="#" class="home-link hidden-xs hidden-ss" title="David Gilbertsion Web Design">David Gilbertson Web Design</a>
-      <a href="#" class="home-link visible-xs hidden-ss" title="David Gilbertsion Web Design">David G Web Design</a>
-      <a href="#" class="home-link visible-ss" title="David Gilbertsion Web Design">David G</a>
+    <header class="dg-nav dg-navbar ">
+      <!-- <div class="dg-navbar-back"> -->
+        <a href="#" class="home-link dg-nav-link hidden-xs hidden-ss"  title="David Gilbertsion Web Design">David Gilbertson Web Design</a>
+        <a href="#" class="home-link dg-nav-link visible-xs hidden-ss" title="David Gilbertsion Web Design">David G Web Design</a>
+        <a href="#" class="home-link dg-nav-link visible-ss"           title="David Gilbertsion Web Design">David G</a>
+      <!-- </div> -->
       <button id="menu-button" class="menu-icon visible-xs visible-sm">
         <span class="menu-icon-bar"></span>
         <span class="menu-icon-bar"></span>
         <span class="menu-icon-bar"></span>
       </button>
       <ul class="dg-navbar-nav hidden-xs hidden-sm">
-        <li><a id="nav-home" class="navbar-link home" href="/" title="">HOME</a></li>
-        <li><a id="nav-portfolio" class="navbar-link portfolio" href="portfolio" title="">PORTFOLIO</a></li>
-        <li><a id="nav-blog" class="navbar-link blog" href="blog" title="">BLOG</a></li>
+        <li class="dg-navbar-nav-item dg-nav-item home"     ><a id="nav-home"      class="dg-nav-link dg-navbar-nav-link" href="/" title="">HOME</a></li>
+        <li class="dg-navbar-nav-item dg-nav-item portfolio"><a id="nav-portfolio" class="dg-nav-link dg-navbar-nav-link" href="portfolio" title="">PORTFOLIO</a></li>
+        <li class="dg-navbar-nav-item dg-nav-item blog"     ><a id="nav-blog"      class="dg-nav-link dg-navbar-nav-link" href="blog" title="">BLOG</a></li>
       </ul>
     </header>
     <div id="body-content" class="body-content container-fluid">

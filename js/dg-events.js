@@ -5,13 +5,22 @@ DG.bindEvents = function() {
   $('#menu-button').click(function() {
     DG.toggleMenu();
   });
-  $('.menu-contents .nav-link').click(function(e) {
+  $('.dg-nav-link').click(function(e) {
     var self = this;
-    e.preventDefault();
-//     console.log('click on', this.href);
-    DG.toggleMenu(function() { //slide the menu up, then navigate to the next page
+    
+    if (!DG.menuVisible) {
       document.location = self.href;
-    });
+    } else {
+      e.preventDefault();
+      DG.toggleMenu(function() { //slide the menu up, then navigate to the next page
+        document.location = self.href;
+      });
+    }
   });
   
+  window.onresize = function() { /* Close the menu if the screen is resized (or it can stay open) */
+    if (DG.menuVisible) {
+//       DG.toggleMenu();
+    }
+  }
 };
